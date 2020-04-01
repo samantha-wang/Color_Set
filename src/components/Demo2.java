@@ -107,7 +107,7 @@ public class Demo2 {
                 }
                 Point mousePoint = MouseInfo.getPointerInfo().getLocation();
                 color = robot.getPixelColor((int)(mousePoint.getX()),(int)(mousePoint.getY()));
-                hex = ColorToHex.toHex(color.getRed(),color.getGreen(),color.getBlue());
+                hex = ColorTransfer.toHex(color.getRed(),color.getGreen(),color.getBlue());
                 text2.setText(hex);
                 //TextArea的颜色改变
                 //MouseListener mouselistener = new MouseListener();
@@ -179,6 +179,15 @@ public class Demo2 {
                     label.setIcon(imageIcon);
                     layeredPane1.add(label, JLayeredPane.DEFAULT_LAYER);           //将图片标签放在layeredpane的底层
 
+                    String color_hex = text2.getText();
+                    Color color_set = ColorTransfer.fromStrToARGB(color_hex);
+                    try {
+                        text.setForeground(color_set);
+                    } catch (IllegalArgumentException e2) {
+                        e2.printStackTrace();
+                        text.setForeground(Color.black);
+                    }
+
                     //hex = ColorToHex.toHex(color.getRed(),color.getGreen(),color.getBlue());
                     //Color color = Color.RED;
 
@@ -201,7 +210,7 @@ public class Demo2 {
         JLabel jp5 = new JLabel();
         jp5.setPreferredSize(new Dimension(500,500));
         //读取图片
-        ImageIcon ima2=new ImageIcon("D:\\workspace\\JavaSpace\\colors.jpg");
+        ImageIcon ima2=new ImageIcon("D:\\workspace\\JavaSpace\\ColorSet\\colors.jpg");
         ima2.setImage(ima2.getImage().getScaledInstance(500, 500,Image.SCALE_DEFAULT ));//可以用下面三句代码来代替
         //新建label，label的setIcon为背景图
         JLabel label5=new JLabel();
@@ -224,24 +233,13 @@ public class Demo2 {
     }
 
 
-/*
-    private static Color fromStrToARGB(String str) {
-        String str1 = str.substring(0, 2);
-        String str2 = str.substring(2, 4);
-        String str3 = str.substring(4, 6);
-        //String str4 = str.substring(6, 8);
-        //int alpha = Integer.parseInt(str1, 16);
-        int red = Integer.parseInt(str1, 16);
-        int green = Integer.parseInt(str2, 16);
-        int blue = Integer.parseInt(str3, 16);
-        Color color = new Color(red, green, blue);
-        return color;
-    }
 
- */
+
+
+
 }
 
-class ColorToHex {
+class ColorTransfer {
 
     public static String toHex(int r, int g, int b) {
         return toBrowserHexValue(r) + toBrowserHexValue(g)
@@ -258,20 +256,18 @@ class ColorToHex {
         return sb.toString().toUpperCase();
     }
 
-    public static String toInt(String hex){
-        //要头不要尾
-        String r = rgbToNumber(hex.substring(0,2));
-        String g = rgbToNumber(hex.substring(2,4));
-        String b = rgbToNumber(hex.substring(4,6));
+    public static Color fromStrToARGB(String str) {
+        String str1 = str.substring(0, 2);
+        String str2 = str.substring(2, 4);
+        String str3 = str.substring(4, 6);
+        //String str4 = str.substring(6, 8);
+        //int alpha = Integer.parseInt(str1, 16);
+        int red = Integer.parseInt(str1, 16);
+        int green = Integer.parseInt(str2, 16);
+        int blue = Integer.parseInt(str3, 16);
+        Color color = new Color(red, green, blue);
+        return color;
+    }
 
-        return "["+r+","+g+","+b+"]";
-    }
-    private static String rgbToNumber(String str){
-        return ""+Integer.parseUnsignedInt(str,16);
-    }
 
-    public static void main(String[] args) {
-        System.out.println(toHex(255, 0, 0));
-        System.out.println(Integer.parseUnsignedInt("a8",16));
-    }
 }
