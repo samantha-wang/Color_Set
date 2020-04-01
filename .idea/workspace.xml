@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a4d8c1-9c4c-4f32-9263-b10d0ed53244" name="Default Changelist" comment="" />
+    <list default="true" id="58a4d8c1-9c4c-4f32-9263-b10d0ed53244" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/JFrameBackground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ColorSet/main/Pic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ColorSet/main/WindowSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ColorSet/main/WindowSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WindowSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WindowSet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -30,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZfQ4jS9uYchccQlq5zXixxg0xZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -50,13 +62,52 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.WindowSet">
+  <component name="RunManager" selected="Application.Demo2">
+    <configuration name="BorderLayoutDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.BorderLayoutDemo" />
+      <module name="ColorSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ColorSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ColorSet" />
       <module name="ColorSet" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Demo2" />
+      <module name="ColorSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LayeredPaneDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.LayeredPaneDemo" />
+      <module name="ColorSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,8 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WindowSet" />
+        <item itemvalue="Application.Demo2" />
+        <item itemvalue="Application.BorderLayoutDemo" />
         <item itemvalue="Application.ColorSet" />
+        <item itemvalue="Application.WindowSet" />
+        <item itemvalue="Application.LayeredPaneDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +148,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585227479724</updated>
-      <workItem from="1585227481194" duration="8149000" />
+      <workItem from="1585227481194" duration="17178000" />
+      <workItem from="1585362810000" duration="20698000" />
+      <workItem from="1585405346067" duration="71875000" />
     </task>
     <servers />
   </component>
@@ -106,25 +162,48 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="313" y="119" key="#Project_Structure/0.0.1440.920@0.0.1440.920" timestamp="1585227533679" />
+    <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1585674524257">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920@0.0.1440.920" timestamp="1585674524257" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1585231496758">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1585231496758" />
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1585237312779">
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1585749587870">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1585237312779" />
-    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1585237312779">
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1585749587870" />
+    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1585749587870">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1585237312779" />
-    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1585237312778">
+    <state width="1398" height="249" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1585749587870" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1585749587870">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1585237312778" />
-    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1585237312779">
+    <state width="1398" height="249" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1585749587870" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1585749587870">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1585237312779" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1585749587870" />
+    <state x="404" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1585405346028">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="404" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1585405346028" />
+    <state x="383" y="196" width="672" height="678" key="search.everywhere.popup" timestamp="1585554407033">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="383" y="196" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1585554407033" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/components/Demo2.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
